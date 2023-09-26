@@ -1,0 +1,253 @@
+/* header-section */
+
+.header-section{
+    background: #000;
+}
+.logo{}
+.menu{}
+.menu ul{
+    text-align: right;
+    display: block;
+  
+}
+.menu ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 12px 10px;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+}
+.menu ul li::after{
+     content: "";
+     display: block;
+     position: absolute;
+     width: 0;
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     background: rgb(199, 41, 41);
+     transition: .4s;
+     margin: 0 auto;
+     right: 0;
+}
+.menu ul li:hover::after{
+    width: 100%;
+}
+.menu ul li a{
+    text-decoration: none;
+    display:inline-block ;
+    color: white;
+    transition: .5s;
+    text-transform: uppercase;
+}
+.menu ul li:first-child a{
+    color: rgb(199, 41, 41);
+}
+.menu ul li a:hover{
+    color: rgb(199, 41, 41);
+}
+
+.menu ul li ul{
+    position: absolute;
+    width: 111px;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    /* padding: 0 18px ; */
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+    transform: scaleY(0);
+    padding: 0;
+}
+.menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+    transform-origin:  center center;
+    transition: .4s;
+}
+.menu ul li ul li{
+   display: block;
+   padding: 0 ;
+}
+.menu ul li ul li a{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    text-transform: capitalize;
+    padding: 0 18px ;
+}
+.menu ul li ul li a:hover{
+    background: #bdc3c7;
+    padding: 0 25px ;
+}
+.menu ul li ul li:hover::after{
+    width: 0;
+    height: 0;
+}
+
+/* banner-section */
+
+.banner-section{
+    padding:100px 0;
+    background-image: url(https://i.ibb.co/G5Q4rnm/ia-200000019.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(rgba(32, 9, 9, 1),rgba(0, 0, 0, .1)); */
+    color: white;
+}
+.banner-title{}
+.banner-title h1{
+    font-size: 66px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-bottom: 12px;
+}
+.banner-title span{
+    
+display: inline-block;
+    
+border-bottom: 3px solid white;
+    
+padding: 0px 34px;
+}
+.banner-title h3{
+    font-size: 31px;
+    font-weight: 500;
+    display: inline-block;
+    padding-bottom: 18px;
+}
+.banner-title .banner-btn{
+    text-transform: uppercase;
+    border: none;
+    background: #f39c12;
+    padding: 10px 47px;
+    border-radius: 26px;
+    outline: none;
+    transition: .4s;
+    color: white;
+}
+.banner-btn:hover{
+   background: white;
+   color: black;
+}
+
+/* items-section */
+
+
+
+.items-section{
+    padding: 100px 0;
+    background: #ecf0f1;
+}
+
+.item{
+    width: 23%;
+    margin-right:2% ;
+    background: white;
+    padding: 20px;
+    display: inline-block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.item-img {
+    transition: .3s;
+}
+.item-btn{
+    transition: .4s;
+}
+.item:hover{
+    
+    background: #bdc3c7;
+}
+.item:hover .item-img {
+    transform: rotateY(360deg);
+}
+.item:hover .item-btn{
+    background: white;
+    color: #f39c12;
+}
+.item .item-btn:hover{
+    background: #000;
+    color: white;
+}
+
+/* from-SECTION */
+.from-SECTION{
+    padding: 50px 0;
+    background: url(https://i.ibb.co/4fkf3H1/ia-200000022.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.from h1{
+    font-size: 50px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+.from p{
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+.about-detals{
+width: 48%;
+margin-right: 2%;
+}
+.about-detals img  {
+    width: 100%;
+}
+.about-btn{
+    border: none;
+    background: black;
+    color: white;
+    margin: 10px 0px;
+    padding: 10px 20px;
+    transition: .4s;
+}
+.about-btn:hover{
+    background: #f39c12;
+    color: black;
+}
+form .style{
+    border: none;
+    box-shadow: 0px 1px 5px 0px rgba(90, 126, 159,1);
+    width: 50%;
+    padding: 15px;
+}
+.from .get-btn{
+    display:block;
+    outline: none;
+    border: none;
+    padding: 16px 40px ;
+    background: #f39c12;
+    color: white;
+}
+
+/* footer-section */
+
+.footer-section{
+    background: #535c68;
+    padding: 20px 0;
+    color: white;
+}
+.lest{
+    margin-top: 13px;
+}
+.fa-brands {
+    padding: 0 10px;
+}
